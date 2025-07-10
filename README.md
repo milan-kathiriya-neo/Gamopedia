@@ -42,9 +42,9 @@
 
 ![Screenshot__home_screen](https://github.com/milan-kathiriya-neo/Gamopedia/blob/main/screenshots/HomeScreen.png)
 
-![Screenshot__details_screen](https://github.com/milan-kathiriya-neo/AuthDemo/blob/dev/screenshots/DetailsScreen.png)
+![Screenshot__details_screen](https://github.com/milan-kathiriya-neo/Gamopedia/blob/main/screenshots/DetailsScreen.png)
 
-![Screenshot__search_screen](https://github.com/milan-kathiriya-neo/AuthDemo/blob/dev/screenshots/SearchScreen.png)
+![Screenshot__search_screen](https://github.com/milan-kathiriya-neo/Gamopedia/blob/main/screenshots/SearchScreen.png)
 
 ----
 
