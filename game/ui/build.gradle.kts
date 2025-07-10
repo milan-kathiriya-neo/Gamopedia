@@ -67,6 +67,7 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
+            implementation(compose.materialIconsExtended)
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
@@ -79,8 +80,6 @@ kotlin {
 
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.androidx.material)
-            implementation("androidx.compose.material:material-icons-extended:1.7.8")
-//            implementation("org.jetbrains.compose.material:material-desktop:1.8.1")
 
         }
         commonTest.dependencies {
@@ -90,15 +89,8 @@ kotlin {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutinesSwing)
 
-            // Material Icons for Desktop
-//            implementation("org.jetbrains.compose.material:material-desktop:1.8.1")
-            implementation("androidx.compose.material:material-icons-core:1.7.8")
-            implementation("androidx.compose.material:material-icons-extended:1.7.8")
         }
         iosMain.dependencies {
-            // Material Icons for Desktop
-            implementation("androidx.compose.material:material-icons-core:1.7.8")
-            implementation("androidx.compose.material:material-icons-extended:1.7.8")
         }
     }
 }

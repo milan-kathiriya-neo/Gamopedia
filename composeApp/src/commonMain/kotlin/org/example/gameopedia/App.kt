@@ -55,9 +55,9 @@ fun App() {
             }
             composable("/gameDetails/{id}") {
                 val id = it.arguments?.getString("id")?.toIntOrNull() ?: 0
-                GameDetailsScreen(id = id) {
+                GameDetailsScreen(id = id, onBackCLick = {
                     navController.popBackStack()
-                }
+                })
             }
             composable("/search") {
                 SearchScreen(onClick = {id->

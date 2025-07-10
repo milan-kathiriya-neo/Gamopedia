@@ -48,7 +48,8 @@ fun SearchScreen(
 
 @Composable
 fun SearchScreenContent(
-    modifier: Modifier = Modifier, uiState: SearchScreen.UiState,
+    modifier: Modifier = Modifier,
+    uiState: SearchScreen.UiState,
     query: String,
     onQueryChange: (String) -> Unit,
     onClick: (Int) -> Unit,
@@ -66,21 +67,22 @@ fun SearchScreenContent(
                 )
             )
         }
-    ) {
+    ) {innerPadding->
+        val modifier = Modifier.padding(innerPadding)
         if (uiState.isLoading) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator()
             }
         }
 
         if (uiState.error.isNotEmpty()) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 Text(uiState.error)
             }
         }
 
         uiState.data?.let { data ->
-            LazyVerticalGrid(columns = GridCells.Fixed(2), modifier = Modifier.fillMaxSize()) {
+            LazyVerticalGrid(columns = GridCells.Fixed(2), modifier = modifier.fillMaxSize()) {
                 items(data) {
                     AsyncImage(
                         model = it.imageUrl,
